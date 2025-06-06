@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Play, Download, Shield, Smartphone, Search, Cast, Users, Star } from "lucide-react";
+import { Play, Download, Shield, Smartphone, Search, Cast, Users, Star, Check, ArrowRight, Award, Globe, Zap } from "lucide-react";
 
 const Index = () => {
   return (
@@ -157,6 +157,216 @@ const Index = () => {
                 <h3 className="text-xl font-semibold text-white">Chromecast & AirPlay</h3>
                 <p className="text-gray-300">
                   Stream directly to your TV with built-in Chromecast and AirPlay support for the big screen experience.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-black/20">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white">
+              Choose Your
+              <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent"> Plan</span>
+            </h2>
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+              Flexible pricing options designed to fit your entertainment needs
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {/* Basic Plan */}
+            <Card className="bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-300">
+              <CardContent className="p-8 space-y-6">
+                <div className="text-center">
+                  <h3 className="text-2xl font-bold text-white mb-2">Basic</h3>
+                  <div className="text-4xl font-bold text-white mb-1">$9.99</div>
+                  <p className="text-gray-400">per month</p>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3">
+                    <Check className="w-5 h-5 text-green-400" />
+                    <span className="text-gray-300">HD streaming quality</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Check className="w-5 h-5 text-green-400" />
+                    <span className="text-gray-300">1 device at a time</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Check className="w-5 h-5 text-green-400" />
+                    <span className="text-gray-300">Limited downloads</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Check className="w-5 h-5 text-green-400" />
+                    <span className="text-gray-300">Basic content library</span>
+                  </div>
+                </div>
+                <Button className="w-full bg-white/10 hover:bg-white/20 text-white border border-white/20">
+                  Get Started
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Premium Plan */}
+            <Card className="bg-gradient-to-b from-purple-600/20 to-pink-600/20 border-purple-400/50 backdrop-blur-sm hover:from-purple-600/30 hover:to-pink-600/30 transition-all duration-300 scale-105">
+              <CardContent className="p-8 space-y-6 relative">
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                    Most Popular
+                  </span>
+                </div>
+                <div className="text-center">
+                  <h3 className="text-2xl font-bold text-white mb-2">Premium</h3>
+                  <div className="text-4xl font-bold text-white mb-1">$19.99</div>
+                  <p className="text-gray-400">per month</p>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3">
+                    <Check className="w-5 h-5 text-green-400" />
+                    <span className="text-gray-300">4K Ultra HD streaming</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Check className="w-5 h-5 text-green-400" />
+                    <span className="text-gray-300">4 devices simultaneously</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Check className="w-5 h-5 text-green-400" />
+                    <span className="text-gray-300">Unlimited downloads</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Check className="w-5 h-5 text-green-400" />
+                    <span className="text-gray-300">Premium content library</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Check className="w-5 h-5 text-green-400" />
+                    <span className="text-gray-300">AI recommendations</span>
+                  </div>
+                </div>
+                <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
+                  Start Free Trial
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Family Plan */}
+            <Card className="bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-300">
+              <CardContent className="p-8 space-y-6">
+                <div className="text-center">
+                  <h3 className="text-2xl font-bold text-white mb-2">Family</h3>
+                  <div className="text-4xl font-bold text-white mb-1">$29.99</div>
+                  <p className="text-gray-400">per month</p>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3">
+                    <Check className="w-5 h-5 text-green-400" />
+                    <span className="text-gray-300">4K Ultra HD streaming</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Check className="w-5 h-5 text-green-400" />
+                    <span className="text-gray-300">8 devices simultaneously</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Check className="w-5 h-5 text-green-400" />
+                    <span className="text-gray-300">Unlimited downloads</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Check className="w-5 h-5 text-green-400" />
+                    <span className="text-gray-300">Complete content library</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Check className="w-5 h-5 text-green-400" />
+                    <span className="text-gray-300">Enhanced parental controls</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Check className="w-5 h-5 text-green-400" />
+                    <span className="text-gray-300">6 user profiles</span>
+                  </div>
+                </div>
+                <Button className="w-full bg-white/10 hover:bg-white/20 text-white border border-white/20">
+                  Choose Family
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white">
+              About
+              <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent"> MovieWave</span>
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Revolutionizing the way you experience entertainment with cutting-edge technology and unparalleled content quality
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
+            <div className="space-y-6">
+              <h3 className="text-3xl font-bold text-white">Our Story</h3>
+              <p className="text-gray-300 text-lg leading-relaxed">
+                Founded in 2020, MovieWave began with a simple mission: to create the ultimate streaming experience that puts users first. 
+                We believe entertainment should be accessible, personalized, and seamless across all devices.
+              </p>
+              <p className="text-gray-300 text-lg leading-relaxed">
+                Today, we serve over 10 million users worldwide, delivering premium content with industry-leading technology 
+                including AI-powered recommendations, advanced parental controls, and innovative offline capabilities.
+              </p>
+              <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
+                Learn More <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
+            </div>
+            <div className="relative">
+              <div className="aspect-square bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl backdrop-blur-sm border border-white/10 flex items-center justify-center">
+                <div className="text-center space-y-4">
+                  <div className="w-24 h-24 bg-white/10 rounded-full flex items-center justify-center mx-auto backdrop-blur-sm">
+                    <Globe className="w-12 h-12 text-white" />
+                  </div>
+                  <p className="text-white/80 text-lg">Global Reach</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="bg-white/5 border-white/10 backdrop-blur-sm text-center p-8">
+              <CardContent className="space-y-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mx-auto">
+                  <Award className="w-8 h-8 text-white" />
+                </div>
+                <h4 className="text-xl font-semibold text-white">Innovation First</h4>
+                <p className="text-gray-300">
+                  We're constantly pushing boundaries with AI technology, advanced streaming capabilities, and user-centric features.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white/5 border-white/10 backdrop-blur-sm text-center p-8">
+              <CardContent className="space-y-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-500 rounded-full flex items-center justify-center mx-auto">
+                  <Users className="w-8 h-8 text-white" />
+                </div>
+                <h4 className="text-xl font-semibold text-white">Community Driven</h4>
+                <p className="text-gray-300">
+                  Our platform evolves based on user feedback, ensuring we deliver exactly what our community wants.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white/5 border-white/10 backdrop-blur-sm text-center p-8">
+              <CardContent className="space-y-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto">
+                  <Zap className="w-8 h-8 text-white" />
+                </div>
+                <h4 className="text-xl font-semibold text-white">Performance Excellence</h4>
+                <p className="text-gray-300">
+                  Lightning-fast streaming, minimal buffering, and 99.9% uptime ensure you never miss a moment.
                 </p>
               </CardContent>
             </Card>
