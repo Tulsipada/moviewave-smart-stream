@@ -1,6 +1,8 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Play, Download, Shield, Smartphone, Search, Cast, Users, Star, Check, ArrowRight, Award, Globe, Zap } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -21,9 +23,11 @@ const Index = () => {
               <a href="#about" className="text-gray-300 hover:text-white transition-colors">About</a>
             </div>
             <div className="flex space-x-4">
-              <Button variant="ghost" className="text-white hover:bg-white/10">
-                Sign In
-              </Button>
+              <Link to="/login">
+                <Button variant="ghost" className="text-white hover:bg-white/10">
+                  Sign In
+                </Button>
+              </Link>
               <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
                 Start Free Trial
               </Button>
