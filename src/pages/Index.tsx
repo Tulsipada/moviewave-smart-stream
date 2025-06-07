@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Play, Download, Shield, Smartphone, Search, Cast, Users, Star, Check, ArrowRight, Award, Globe, Zap } from "lucide-react";
@@ -50,7 +49,7 @@ const Index = () => {
                 <Play className="w-5 h-5 mr-2" />
                 Start Watching Now
               </Button>
-              <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 text-lg px-8 py-4 h-auto">
+              <Button size="lg" className="bg-white/10 border border-white/30 text-white hover:bg-white/20 hover:border-white/50 backdrop-blur-sm text-lg px-8 py-4 h-auto">
                 Watch Trailer
               </Button>
             </div>
@@ -412,7 +411,7 @@ const Index = () => {
             <Button size="lg" className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-lg px-8 py-4 h-auto">
               Start Free Trial
             </Button>
-            <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 text-lg px-8 py-4 h-auto">
+            <Button size="lg" className="bg-white/10 border border-white/30 text-white hover:bg-white/20 hover:border-white/50 backdrop-blur-sm text-lg px-8 py-4 h-auto">
               <Users className="w-5 h-5 mr-2" />
               View Plans
             </Button>
