@@ -179,7 +179,7 @@ const Index = () => {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {/* Basic Plan */}
-            <Card className="bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-300">
+            <Card className="bg-slate-800/50 border-slate-700/50 backdrop-blur-sm hover:bg-slate-800/70 transition-all duration-300 hover:scale-105">
               <CardContent className="p-8 space-y-6">
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-white mb-2">Basic</h3>
@@ -188,71 +188,71 @@ const Index = () => {
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
-                    <Check className="w-5 h-5 text-green-400" />
+                    <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
                     <span className="text-gray-300">HD streaming quality</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Check className="w-5 h-5 text-green-400" />
+                    <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
                     <span className="text-gray-300">1 device at a time</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Check className="w-5 h-5 text-green-400" />
+                    <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
                     <span className="text-gray-300">Limited downloads</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Check className="w-5 h-5 text-green-400" />
+                    <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
                     <span className="text-gray-300">Basic content library</span>
                   </div>
                 </div>
-                <Button className="w-full bg-white/10 hover:bg-white/20 text-white border border-white/20">
+                <Button className="w-full bg-slate-700 hover:bg-slate-600 text-white border-0">
                   Get Started
                 </Button>
               </CardContent>
             </Card>
 
             {/* Premium Plan */}
-            <Card className="bg-gradient-to-b from-purple-600/20 to-pink-600/20 border-purple-400/50 backdrop-blur-sm hover:from-purple-600/30 hover:to-pink-600/30 transition-all duration-300 scale-105">
+            <Card className="bg-gradient-to-b from-purple-600/30 to-pink-600/30 border-purple-400/50 backdrop-blur-sm hover:from-purple-600/40 hover:to-pink-600/40 transition-all duration-300 scale-105 shadow-2xl shadow-purple-500/25">
               <CardContent className="p-8 space-y-6 relative">
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
                     Most Popular
                   </span>
                 </div>
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-white mb-2">Premium</h3>
                   <div className="text-4xl font-bold text-white mb-1">$19.99</div>
-                  <p className="text-gray-400">per month</p>
+                  <p className="text-gray-300">per month</p>
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
-                    <Check className="w-5 h-5 text-green-400" />
-                    <span className="text-gray-300">4K Ultra HD streaming</span>
+                    <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
+                    <span className="text-white">4K Ultra HD streaming</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Check className="w-5 h-5 text-green-400" />
-                    <span className="text-gray-300">4 devices simultaneously</span>
+                    <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
+                    <span className="text-white">4 devices simultaneously</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Check className="w-5 h-5 text-green-400" />
-                    <span className="text-gray-300">Unlimited downloads</span>
+                    <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
+                    <span className="text-white">Unlimited downloads</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Check className="w-5 h-5 text-green-400" />
-                    <span className="text-gray-300">Premium content library</span>
+                    <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
+                    <span className="text-white">Premium content library</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Check className="w-5 h-5 text-green-400" />
-                    <span className="text-gray-300">AI recommendations</span>
+                    <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
+                    <span className="text-white">AI recommendations</span>
                   </div>
                 </div>
-                <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
+                <Button className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white shadow-lg">
                   Start Free Trial
                 </Button>
               </CardContent>
             </Card>
 
             {/* Family Plan */}
-            <Card className="bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-300">
+            <Card className="bg-slate-800/50 border-slate-700/50 backdrop-blur-sm hover:bg-slate-800/70 transition-all duration-300 hover:scale-105">
               <CardContent className="p-8 space-y-6">
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-white mb-2">Family</h3>
@@ -261,31 +261,31 @@ const Index = () => {
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
-                    <Check className="w-5 h-5 text-green-400" />
+                    <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
                     <span className="text-gray-300">4K Ultra HD streaming</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Check className="w-5 h-5 text-green-400" />
+                    <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
                     <span className="text-gray-300">8 devices simultaneously</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Check className="w-5 h-5 text-green-400" />
+                    <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
                     <span className="text-gray-300">Unlimited downloads</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Check className="w-5 h-5 text-green-400" />
+                    <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
                     <span className="text-gray-300">Complete content library</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Check className="w-5 h-5 text-green-400" />
+                    <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
                     <span className="text-gray-300">Enhanced parental controls</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Check className="w-5 h-5 text-green-400" />
+                    <Check className="w-5 h-5 text-green-400 flex-shrink-0" />
                     <span className="text-gray-300">6 user profiles</span>
                   </div>
                 </div>
-                <Button className="w-full bg-white/10 hover:bg-white/20 text-white border border-white/20">
+                <Button className="w-full bg-slate-700 hover:bg-slate-600 text-white border-0">
                   Choose Family
                 </Button>
               </CardContent>
