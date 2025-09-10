@@ -1,73 +1,80 @@
-# Welcome to your Lovable project
+# StarStream
 
-## Project info
+A modern streaming platform built with React, TypeScript, and Vite. StarStream provides an immersive viewing experience with a sleek interface and smooth navigation.
 
-**URL**: https://lovable.dev/projects/1af485f2-2b6e-4f54-aa1d-148976fcc3fa
+## Features
 
-## How can I edit this code?
+- 🎬 **Movie Catalog** - Browse trending, popular, and original content
+- 🎭 **Hero Section** - Dynamic carousel showcasing featured content
+- 🎨 **Modern UI** - Built with Shadcn UI and Tailwind CSS
+- 📱 **Responsive Design** - Optimized for all devices
+- ⚡ **Fast Performance** - Powered by Vite and React
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **Frontend**: React 18, TypeScript
+- **Build Tool**: Vite
+- **UI Components**: Shadcn UI, Radix UI
+- **Styling**: Tailwind CSS
+- **Routing**: React Router DOM
+- **State Management**: TanStack Query
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1af485f2-2b6e-4f54-aa1d-148976fcc3fa) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js (v18 or higher)
+- npm or yarn
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository
+```bash
+git clone <your-repo-url>
+cd starstream-home
+```
 
-Follow these steps:
+2. Install dependencies
+```bash
+npm install
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Open your browser and navigate to `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Project Structure
 
-**Use GitHub Codespaces**
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # Shadcn UI components
+│   ├── HeroSlider.tsx  # Main hero carousel
+│   ├── VideoCarousel.tsx # Movie carousels
+│   └── Navigation.tsx   # Top navigation
+├── pages/              # Page components
+├── data/               # JSON data files
+├── assets/             # Images and media
+└── hooks/              # Custom React hooks
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Available Scripts
 
-## What technologies are used for this project?
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-This project is built with:
+## Contributing
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
-## How can I deploy this project?
+## License
 
-Simply open [Lovable](https://lovable.dev/projects/1af485f2-2b6e-4f54-aa1d-148976fcc3fa) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is licensed under the MIT License.
